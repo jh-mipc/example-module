@@ -35,5 +35,5 @@ RUN python /opt/setup_hdbet.py && \
     rm -f /opt/setup_hdbet.py
 
 ENV PATH /opt/run:${PATH}
-COPY --chmod=755 run-hdbet run-subject-hdbet run-session-hdbet /opt/run/
-ENTRYPOINT ["run-hd-bet"]
+COPY --chmod=755 run-hdbet /opt/run/
+ENTRYPOINT ["run-hdbet"]
